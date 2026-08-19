@@ -1,0 +1,19 @@
+body {
+    background-color: #ed0b0b;
+}
+
+#miBoton {
+    background-color: #0b0bed;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resultado {
+    background-color: aliceblue;
+    color: black;
+    padding: 10px;
+    margin: 10pxpx 100px 100px;
+}
