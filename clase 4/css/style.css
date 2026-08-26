@@ -1,0 +1,93 @@
+h1 {
+    color: red;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/**
+* {
+    outline: red dashed 1px;
+}
+**/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 24.99%;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-5{
+    width: 41.66%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.66%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.33%;
+}
+.col-11{
+    width: 91.66%;
+}
+.col-12{
+    width: 100%;
+}
+
+/** Estilos de mis componentes **/
+.menu-principal {
+    background: rgb(52, 52, 206);
+    color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    height: 90vh;
+}
+
+.card {
+    border: solid 1px rgb(58, 78, 209);
+    border-radius: 0.5rem;
+    background: rgb(37, 190, 228);
+    margin: 0.5rem;
+    padding: 1rem;
+    min-height: 200px;
+}
+
+.direct-access{
+    font-size: 70px;
+    text-align: center;
+    display: block;
+    background: blue;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    line-height: 1.5;
+    margin: auto;
+}
+
+#imagen-principal {
+    background-image: url("img/db82aimagenLavadora.webp");
+    background-size: cover;
+    height: 340px;
+    background-position: center;
+}
