@@ -1,40 +1,63 @@
 <!DOCTYPE html>
-<html lang="es-CL">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Top Videojuegos</title>
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
-    <div class="row">
-        <div class="col-12">
-            <div class="row">
-                <div class="col-1">Imagen</div>
-                <div class="col-11">
-                    <nav class="menu-principal">
-                        <ul>
-                            <li>Home</li>
-                            <li>Usuarios</li>
-                            <li>Juegos</li>
-                            <li>Contacto</li>
-                        </ul>
-                    </nav>
+    <div class="contenedor-grid">
+        
+        <!-- HEADER -->
+        <header class="header">
+            <div class="logo">🎮</div>
+            <div class="banner-text">Top Juegos del Momento</div>
+        </header>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main-feature">
+            <img src="img/helldivers.jpg" alt="Helldivers 2" class="img-principal">
+            <h2>Helldivers 2</h2>
+            <p>Únete a la lucha por la libertad en este shooter cooperativo.</p>
+            <!-- Nuevo botón -->
+            <a href="helldivers.html" class="btn-juego">Ver detalles y descargar</a>
+        </main>
+
+        <!-- BARRA LATERAL -->
+        <aside class="sidebar">
+            <div class="sidebar-item">
+                <img src="img/cod.jpg" alt="Call of Duty Mobile" class="img-secundaria">
+                <div>
+                    <div class="text-small">Call of Duty Mobile</div>
+                    <!-- Nuevo botón -->
+                    <a href="cod.html" class="btn-juego btn-chico">Ver más</a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-6">Imagen Grande</div>
-                <div class="row">
-                    <div class="col-12">Barra con imagen a la derecha</div>
-                    <div class="col-12">Barra con imagen a la derecha</div>
+            <div class="sidebar-item">
+                <img src="img/gta.jpg" alt="GTA V" class="img-secundaria">
+                <div>
+                    <div class="text-small">GTA V Online</div>
+                    <!-- Nuevo botón -->
+                    <a href="gta.html" class="btn-juego btn-chico">Ver más</a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-4">comentarios</div>
-                <div class="col-4">comentarios</div>
-                <div class="col-4">comentarios</div>
-            </div>
+        </aside>
+
+        <!-- COMENTARIOS -->
+        <div class="comentario">
+            <div class="avatar">👤</div>
+            <p>"¡El multijugador de Helldivers es increíble!"</p>
         </div>
+        <div class="comentario">
+            <div class="avatar">👤</div>
+            <p>"COD Mobile nunca falla para un rato libre."</p>
+        </div>
+        <div class="comentario">
+            <div class="avatar">👤</div>
+            <p>"Sigo jugando GTA V con amigos, no pasa de moda."</p>
+        </div>
+
     </div>
 </body>
 </html>
