@@ -5,11 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="css/pure-min.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div style="align-items: center; justify-content: center;" class="pure-g">
-            <div style="background-color: rgb(255, 202, 121); padding: 1em; height: 200px; align-items: center; justify-content: center; text-align: center;" class="pure-u-24-24">
-                <select style="height: 10em; width: 50em; text-align: center;" id="miSelector">
+        <div class="pure-g div-principal">
+            <div class="pure-u-24-24 div-selector">
+                <select id="miSelector">
                     <option style="font-size: large;" value="suma">Suma</option>
                     <option style="font-size: large;" value="resta">Resta</option>
                     <option style="font-size: large;" value="multiplicacion">Multiplicación</option>
@@ -17,22 +18,23 @@
                 </select>
             </div>
 
-            <div style="background-color: rgb(42, 9, 255); padding: 1em; height: 200px;" class="pure-u-11-24">
+            <div class="pure-u-11-24 div-numero-1">
                 <input type="number" 
                        id="primerNumero" 
                        placeholder="Ingrese el primer número"
                 />
             </div>
-            <div style="background-color: rgb(169, 255, 9); padding: 1em; height: 200px;" class="pure-u-11-24">
+            <div class="pure-u-11-24 div-numero-2">
                 <input type="number" 
                        id="segundoNumero" 
                        placeholder="Ingrese el segundo número"
                 />
             </div>
 
-            <div style="background-color: rgb(14, 230, 57); padding: 1em; height: 200px;" class="pure-u-24-24"><button id="miBoton">CALCULAR</button></div>
+            <div  class="pure-u-24-24 div-boton-calcular"><button id="miBoton">CALCULAR</button></div>
 
-            <div style="background-color: rgb(14, 230, 57); padding: 1em; height: 200px;" class="pure-u-24-24">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum culpa labore voluptatibus soluta consequatur. Sint, amet deserunt commodi tempore perferendis odit, laborum eligendi assumenda dolores nam voluptatum, cupiditate placeat ea.</div>
+            <div id="resultado" class="pure-u-24-24 div-resultado">0</div>
         </div>
+        <script src="js/main.js"></script>
     </body>
 </html>

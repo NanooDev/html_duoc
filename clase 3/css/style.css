@@ -1,0 +1,40 @@
+.div-principal {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.div-selector {
+    background-color: rgb(255, 202, 121);
+    padding: 3em 1em;
+    text-align: center;
+}
+
+.div-numero-1 {
+    background-color: rgb(42, 9, 255);
+    padding: 3em 1em;
+    text-align: center;
+}
+
+.div-numero-2 {
+    background-color: rgb(169, 255, 9);
+    padding: 3em 1em;
+    text-align: center;
+}
+
+.div-boton-calcular {
+    background-color: rgb(14, 230, 57);
+    padding: 2em 1em;
+    text-align: center;
+}
+
+.div-resultado {
+    background-color: rgb(14, 230, 57);
+    padding: 1em;
+    text-align: center;
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    border-top: 5px solid white;
+}
+
+
