@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="#">
+        <label>
+            Nombre de Usuario:
+            <input 
+                type="text" 
+                name="nombre" 
+                placeholder="Ej. usuario123"
+                required
+                aria-required="true"
+                autocomplete="username"
+            />
+        </label><br>
+        
+
+        <label>
+            Ingrese su email
+            <input 
+                type="email" 
+                name="email" 
+                placeholder="Ej. email@gmail.com"
+                required
+                aria-required="true"
+                autocomplete="username"
+            />
+        </label><br>
+        
+
+        <label>
+            Ingrese su telefono
+            <input 
+                type="tel" 
+                name="telefono" 
+                placeholder="+56912345678"
+                pattern="^"
+            />
+        </label><br>
+        
+
+        <label for="nacionalidad">Seleccione un pais</label>
+        <select name="nacionalidad">
+            <option value="chilena">Chilena</option>
+            <option value="venezolana">Venezolana</option>
+            <option value="colombiana">Colombiana</option>
+        </select><br><br>
+
+        <label for="suscripcion"><h4>¿Desea suscribirse para recibir notificaciones?</h4></label>
+        <input type="checkbox" name="suscripcion"><br>
+
+        <h2>Seleccione su Género</h2>
+        <input type="radio" name="masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" name="femenino">
+        <label for="femenino">Femenino</label><br>
+        <input type="radio" name="prefieroNoDecir">
+        <label for="prefieroNoDecir">Prefiero no decirlo</label><br>
+
+        <h4>Ingrese su Biografía</h4>
+        <textarea name="message" rows="10" cols="30" placeholder="Deje aquí sus consultas o reclamos"></textarea>
+
+        <input type="submit" value="Submit" onclick="alert('REGISTRADO!')">
+    </form>
+    <!-- 
+    Link para js en head
+    <script src="js/main.js"></script> 
+    -->
+</body>
+</html>
