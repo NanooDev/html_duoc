@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es-CL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validaciones con Bulma</title>
+    <link rel="stylesheet" href="css/bulma.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" type="module"></script>
+  </head>
+  <body>
+    <!-- Sección principal para darle respiro (padding) arriba y abajo -->
+    <section class="section">
+      <div class="container">
+        <!-- Centramos el formulario usando columnas de Bulma -->
+        <div class="columns is-centered">
+          <div class="column is-half">
+            
+            <!-- Agregamos la clase "box" para que parezca una tarjeta con fondo blanco y sombra -->
+            <form action="#" method="post" class="box" id="form"> 
+              <h1 class="title has-text-centered">Registro</h1>
+
+              <!-- CAMPO: Nombre de usuario -->
+              <div class="field">
+                <label class="label">Nombre de usuario:</label>
+                <div class="control">
+                  <input class="input" type="text" name="username" placeholder="Ej. usuario123" required aria-required="true" autocomplete="username" />
+                </div>
+              </div>
+
+              <!-- CAMPO: Correo electrónico -->
+              <div class="field">
+                <label class="label">Correo electrónico:</label>
+                <div class="control">
+                  <input class="input" type="email" name="email" placeholder="ejemplo@correo.com" required aria-required="true" autocomplete="email" />
+                </div>
+              </div>
+
+              <!-- CAMPO: Teléfono móvil -->
+              <div class="field">
+                <label class="label">Teléfono móvil:</label>
+                <div class="control">
+                  <input class="input" type="tel" name="phone" placeholder="+56912345678" pattern="^(\+?56)?\s?9\d{8}$" title="Ingrese un número chileno válido (ej: +56912345678 o 912345678)" required aria-required="true" autocomplete="tel" />
+                </div>
+              </div>
+
+              <!-- CAMPO: País -->
+              <div class="field">
+                <label class="label">País:</label>
+                <div class="control">
+                  <!-- is-fullwidth hace que el selector ocupe todo el ancho -->
+                  <div class="select is-fullwidth">
+                    <select name="country" required aria-required="true">
+                      <option value="" selected disabled>Seleccione país</option>
+                      <option value="AR">Argentina</option>
+                      <option value="BO">Bolivia</option>
+                      <option value="BR">Brasil</option>
+                      <option value="CL">Chile</option>
+                      <option value="CO">Colombia</option>
+                      <option value="MX">México</option>
+                      <option value="PE">Perú</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- CAMPO: Género (Radios) -->
+              <div class="field">
+                <label class="label">Género:</label>
+                <div class="control">
+                  <label class="radio">
+                    <input type="radio" name="gender" value="masculino" required /> Masculino
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="gender" value="femenino" /> Femenino
+                  </label>
+                  <label class="radio">
+                    <input type="radio" name="gender" value="prefiero-no-decirlo" /> Prefiero no decirlo
+                  </label>
+                </div>
+              </div>
+
+              <!-- CAMPO: Biografía (Textarea) -->
+              <div class="field">
+                <label class="label">Biografía pequeña:</label>
+                <div class="control">
+                  <textarea class="textarea" name="bio" rows="3" placeholder="Cuéntanos un poco sobre ti..."></textarea>
+                </div>
+              </div>
+
+              <!-- CAMPO: Edad -->
+              <div class="field">
+                <label class="label">Edad:</label>
+                <div class="control">
+                  <input class="input" type="number" name="age" placeholder="Ej. 25" />
+                </div>
+              </div>
+
+              <!-- CAMPO: Newsletter (Checkbox) -->
+              <div class="field">
+                <div class="control">
+                  <label class="checkbox">
+                    <input type="checkbox" name="newsletter" value="true" />
+                    ¿Deseas suscribirte al newsletter?
+                  </label>
+                </div>
+              </div>
+
+              <!-- BOTÓN DE ENVIAR -->
+              <div class="field mt-5">
+                <div class="control">
+                  <button class="button is-link is-fullwidth" type="submit">Registrarse</button>
+                </div>
+              </div>
+
+              <!-- CAJA PARA MENSAJES DE ERROR DE JS -->
+              <div id="mensaje" class="has-text-danger has-text-centered mt-3 has-text-weight-bold"></div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

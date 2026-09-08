@@ -1,0 +1,23 @@
+/* --- 1. FONDO PRINCIPAL (Pantallas grandes) --- */
+body {
+    /* Fondo azul bien oscuro, totalmente liso y elegante */
+    background-color: #0f172a; 
+    min-height: 100vh;
+}
+
+/* --- 2. ESTILO DE LA CAJA DEL FORMULARIO --- */
+.box {
+    /* Mantenemos ese toque de borde y sombra verde suave que hace resaltar tu formulario */
+    border: 2px solid #10b981; 
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.4); 
+    margin-top: 2rem; 
+}
+
+/* --- 3. MEDIA QUERIES (Cambio de color al achicar) --- */
+/* Si la pantalla es de un celular o tablet (menos de 768px de ancho) */
+@media screen and (max-width: 768px) {
+    body {
+        /* Cambiamos a un fondo morado oscuro y liso para que se note la adaptabilidad */
+        background-color: #2e1065; 
+    }
+}
